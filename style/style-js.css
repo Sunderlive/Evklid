@@ -1,0 +1,89 @@
+  .hero__content {
+      position: relative;
+      z-index: 1;
+  }
+ 
+  .swiper.hero__swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .hero__pagination.swiper-bullet-pagination {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide-1 {
+    background-image: url("../img/hero01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slide-2 {
+    background-image: url("../img/hero02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slide-3 {
+    background-image: url("../img/hero03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      background-color: #fff;
+      width:15px;
+      height:15px;
+      margin:0px 10px 22px 10px;
+  }
+
+  @media (max-width: 320px) {
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        margin: 0px 10px 7px 10px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      margin: 0px 10px 7px 10px;
+  }
+  }
+
+  .tabs-nav__btn--active {
+    color: #E1670E;
+    }
+    .tabs-item {
+    display: none;
+    }
+    .tabs-item--active {
+    display: block;
+  }
+
+.ui-accordion-content-active {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+  border-bottom: 1px solid var(--color-white-gray);
+}
+
+.accordion__top.ui-state-active .btn-plus {
+  transform: rotate(45deg);
+}
+
+.accordion__top.ui-state-active .questions__button{
+  border-bottom: none;
+}
+
+
+
